@@ -37,7 +37,7 @@ public class ConsumerApplicationThirdSlow {
             consumer.subscribe(Collections.singleton(topic), new ConsumerRebalanceListener() {
                 @Override
                 public void onPartitionsRevoked(Collection<TopicPartition> partitions) {
-                    LOG.info("onPartitionsRevoked - partitions:{}", formatPartitions(partitions));
+                    LOG.info("onPartitionsRevoked - partitions: {}", formatPartitions(partitions));
                 }
 
                 @Override
